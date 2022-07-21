@@ -26,10 +26,10 @@ header {
 }
 
 /* header img {
-    /* width: 50px; */
+    width: 50px;
     height: 40px;
-} */
-
+} 
+*/
 header ul {
     display: flex;     
 }
