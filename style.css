@@ -25,10 +25,10 @@ header {
     color: sandybrown;
 }
 
-header img {
+/* header img {
     /* width: 50px; */
     height: 40px;
-}
+} */
 
 header ul {
     display: flex;     
