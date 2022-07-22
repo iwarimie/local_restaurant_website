@@ -14,54 +14,59 @@ h1 {
     text-transform: capitalize;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 3rem;
 
 }
 
 header {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: indigo;
     color: sandybrown;
-    /* border: 1px solid red; */
-    justify-self: normal;
+    padding: 0 5%;
 }
-
-/* header img {
-    height: 40px;
-} */
 
 header ul {
     display: flex;   
-    /* border: 1px solid yellow; */
+    
 
 }
 
-h3 {
+#logo-mark {
     text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
     }
 
-#logo-mark {
-    margin-left: 20px;
-    margin-top: 5px;
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.menu-btn span {
     
+    width: 100%;
+    height: 3px;
+    background-color: white;
 }
 
 nav li {
     color: sandybrown;
-    list-style-type: none; 
-    margin: 20px 20px 0 0;
+    list-style: none; 
+    margin: 0 1rem;
     text-align: justify;
-    /* border: 1px solid black; */
-    
-      
 }
 
 header a {
     text-decoration: none;
     color: sandybrown;
-   
-    
+    font-size: 1.5rem;
 }
 
 header li a:hover {
@@ -72,65 +77,132 @@ header li a:hover {
     
 }
 
-img {
-    height: 300px;
-    width: 300px;
-    list-style-image: none;
-    border-radius: 8px;
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: dimgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
-section {
-    width: 700px;
-    margin: auto;
+#side-drawer:target {
+    display: block;
 }
 
-section li {
-    list-style-type: none;
-}
-#together {
+#side-drawer header {
+    height: 5rem;
     display: flex;
-    background-color: blueviolet;
-    margin-top: 40px;
-    border-radius: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: indigo; */
+    color: sandybrown;
+    padding: 0 5%;
 }
 
-.post-card {
-    margin-top: 35px;
-    background-color: whitesmoke;
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
-    margin-top: -8px;
+    align-items: center;
+    
+    
 }
 
-.post-card p , a {
-    align-self: center;
-    padding: 5px 5px 0px 5px;
+#side-drawer li {
+    /* padding-bottom: 1rem; */
+    margin: 1rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
-.post-card p {
+
+#side-drawer li a {
+        text-decoration: none;
+        color: sandybrown;
+    }
+
+section {
+    width: 80%;
+    margin: 2rem auto;
+}
+#together {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem ;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    border-radius: 8px;
+}
+
+
+
+.food-item {
+    background-color: whitesmoke;
+    list-style-type: none;
+    border-radius: 6px;
+    overflow: hidden;
+} 
+
+
+img {
+    height: 15rem;
+    width: 100%;
+    list-style-image: none;
+    object-fit: cover;
+}
+
+.food-item-content {
+    text-align: center;
+    padding: 0.6rem 0.1rem;
+    font-size: 200%;
+    
+}
+
+.food-item-content p {
     color: purple;
     text-transform: capitalize;
 }
-.post-card a {
+.food-item-content a {
     background-color: goldenrod;
-    margin-top: 4px;
-    padding: 5px 10px;
+    /* margin-top: 4px; */
+    padding: 0.5rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
     text-transform: capitalize;
-    margin-bottom: 5px;
+    /* margin-bottom: 34px; */
     font-size: 10px;
-    font-weight: 100;
     color: aliceblue;
 }
 
-.post-card a:hover {
+.food-item-content a:hover {
     background-color: palevioletred;
 } 
 
-.first {
-    margin-right: 30px;
-}
 
-.second {
-    margin-left: 30px;
+@media (max-width: 48rem) {
+      
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    #together {
+     grid-template-columns: 100%;
+    }
+    
+    
+    /* #logo-mark {
+        margin: 0 auto;
+    } */
 }

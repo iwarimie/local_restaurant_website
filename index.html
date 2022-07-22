@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="logo-mark">
-             <a href="/index.html"><h3>Adplus Food</h3></a>
+             <a href="/index.html">Adplus Food</a>
             <!-- <img src="/img/ADplus black no background.png" alt=""> -->
         </div>
         <nav>
@@ -25,28 +25,53 @@
                 <li><a href="#">My Orders</a></li>
             </ul>
         </nav>
+
+        <a href="#side-drawer" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         
     </header>
+    <aside id="side-drawer">
+        <header>
+            <a href="#" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </header>
+        <nav>
+            <ul>
+                
+                <li><a href="#">Browse Meals</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+        </nav>
+    </aside>
     <main>
-        
+        <h1>Browse Our delicious meals</h1>
         <section>
-            <h1>Browse Our delicious meals</h1>
+            
             <ul id="together">
-                <li class="first">
+                <li class="food-item">
+                    <article>
                     <img  src="/img/afang_soup2.jpg" alt="picture of Agang soup">
-                    <div class="post-card"> 
+                    <div class="food-item-content"> 
                         <p>Afang Soup with beef</p>
                         <a href="#">add to cart</a>
                     </div>
+                </article>
                
                 </li>
-                <li class="second">
+                <li class="food-item">
+                    <article>
                     <img src="/img/okro_soup.jpg" alt="picture of okro soup">
-                    <div class="post-card">
-                        <p>Okro soup with prongs</p>
+                    <div class="food-item-content">
+                        <p>Okro soup with prawns</p>
                         <a href="#">add to cart</a>
-
-                     </div>
+                    </div>
+                </article>
                 
                 <li>
 
@@ -54,5 +79,6 @@
             
         </section>
     </main>
+   
 </body>
 </html>
